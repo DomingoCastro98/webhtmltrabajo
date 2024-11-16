@@ -1,0 +1,98 @@
+
+body {
+    margin: auto;
+    padding: auto;
+    background-image:  url(./src/background.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+
+h2 {
+    text-align: center;
+    margin: 100px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+#menu{
+    display: flex;
+    color:white;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    margin: auto;
+}
+#menu li {
+    padding: 10px;
+    color: white;
+    list-style-type: none;
+}
+.linkmenu{
+    color: white;
+    text-decoration: none;
+}
+.linkmenu:hover{
+    color: aqua;
+    cursor: pointer;
+    text-decoration: overline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Estilo para el contenedor dentro de la celda */
+.td-content {
+    display: flex; /* Habilita flexbox */
+}
+
+/* Estilo para la imagen */
+.td-content img {
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilo para el título */
+.td-content h1 {
+    margin: 0; /* Elimina márgenes por defecto del h1 */
+    color: #ddd;
+    font-variant: small-caps;
+}
+.td-content h1:hover{
+    color: rgb(21, 105, 161);
+}
+.td-content p{
+    color:white;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+.divbutton{
+    position: relative;
+    text-align: center;
+}
+.buttonpj{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(87, 5, 5);
+    color: #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large
+}
+.linkcrear{
+    color: white;
+    text-decoration: none;
+}
+.linkcrear:hover{
+    color: aqua;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
