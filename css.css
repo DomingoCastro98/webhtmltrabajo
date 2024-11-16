@@ -3,7 +3,7 @@ body {
     margin: auto;
     padding: auto;
     background-image:  url(./src/background.jpg);
-    background-size: auto;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
