@@ -15,10 +15,16 @@
 <body id="bodyali">
     <div id="menu">
         <script>
-            function goBack(event) {
-                event.preventDefault(); 
-                window.history.back();
-            }
+function goBack() {
+    if (window.history.length > 1) {
+        window.history.back();
+    } else {
+        // Redirige a una página predeterminada
+        window.location.href = 'index.html';
+    }
+}
+
+
         </script>
     
         <a href="#" onclick="goBack(event)">
