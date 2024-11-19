@@ -1,19 +1,19 @@
-
 body {
     margin: auto;
     padding: auto;
-    background-image:  url(./src/background.jpg);
+    background-image: url(./src/background.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
 body#bodyali {
     background-color: #0f1422;
-    background-image: 
-        url(./src/alianzashield.gif), 
-        url(./src/alianzashield.gif); 
-    background-repeat: no-repeat; 
-    background-position: left top, left bottom; 
-    background-size: auto; 
+    background-image:
+        url(./src/alianzashield.gif),
+        url(./src/alianzashield.gif);
+    background-repeat: no-repeat;
+    background-position: left top, left bottom;
+    background-size: auto;
 }
 
 
@@ -26,24 +26,27 @@ h2 {
     font-size: medium;
 }
 
-#menu{
+#menu {
     display: flex;
-    color:white;
+    color: white;
     font-size: xx-large;
     font-family: Arial, Helvetica, sans-serif;
     align-items: center;
     margin: auto;
 }
+
 #menu li {
     padding: 10px;
     color: white;
     list-style-type: none;
 }
-.linkmenu{
+
+.linkmenu {
     color: white;
     text-decoration: none;
 }
-.linkmenu:hover{
+
+.linkmenu:hover {
     color: aqua;
     cursor: pointer;
     text-decoration: overline;
@@ -60,38 +63,42 @@ td {
 }
 
 .td-content {
-    display: flex; 
+    display: flex;
 }
 
 
 .td-content img {
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 
 .td-content a {
-    margin: 0; 
+    margin: 0;
     color: #ddd;
     font-variant: small-caps;
     text-decoration: none;
     font-size: x-large;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.td-content a:hover{
+
+.td-content a:hover {
     color: rgb(21, 105, 161);
 }
-.td-content p{
-    color:white;
+
+.td-content p {
+    color: white;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px;
 }
-.divbutton{
+
+.divbutton {
     position: relative;
     text-align: center;
     margin-top: 2%;
 }
-.buttonpj{
+
+.buttonpj {
     width: 100px;
     height: 50px;
     background-color: rgb(87, 5, 5);
@@ -99,16 +106,19 @@ td {
     font-family: Arial, Helvetica, sans-serif;
     font-size: large
 }
-.linkcrear{
+
+.linkcrear {
     color: white;
     text-decoration: none;
 }
-.linkcrear:hover{
+
+.linkcrear:hover {
     color: aqua;
     cursor: pointer;
     text-decoration: underline;
 }
-#tablarazas{
+
+#tablarazas {
     width: 50%;
     height: 50%;
     text-align: center;
@@ -116,29 +126,35 @@ td {
     background-color: #0f1422;
 
 }
+
 #tablarazas td {
-    vertical-align: top; 
-    text-align: center; 
+    vertical-align: top;
+    text-align: center;
 }
+
 #tablarazas p {
     margin-top: 5%;
 }
-.pcaracteristicasrazas{
+
+.pcaracteristicasrazas {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #ddd;
     margin: 0;
 }
-.pctitulorazas{
+
+.pctitulorazas {
     color: #f8b700;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: auto;
-    width: auto; 
+    width: auto;
 }
-th{
+
+th {
     color: #ddd;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#tablaclasesyraciales{
+
+#tablaclasesyraciales {
     width: 50%;
     height: 50%;
     text-align: center;
@@ -146,8 +162,9 @@ th{
     margin-top: 5%;
     background-color: #0f1422;
 }
+
 #tablaclasesyraciales td {
-    vertical-align: top; 
-    text-align: center; 
+    vertical-align: top;
+    text-align: center;
     border: 0;
 }
