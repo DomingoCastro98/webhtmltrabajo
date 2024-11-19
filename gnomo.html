@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="World of Warcraft, humanos, orcos, guerra, pvp, pve" />
+    <meta name="description" content="El humano" />
+    <meta name="author" content="Domingo" />
+    <title>Gnomo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./src/gnomofaviicon.webp" />
+</head>
+
+<body id="bodyali">
+    <div id="menu">
+        <script>
+            function goBack() {
+                if (window.history.length > 1) {
+                    window.history.back();
+                } else {
+                    window.location.href = 'index.html';
+                }
+            }
+        </script>
+        <a href="#" onclick="goBack(event)">
+            <img src="./src/arrowback.ico" alt="Back Button">
+        </a>
+        <ul id="menu">
+            <li><a class="linkmenu" href="razas.html">Razas</a></li>
+            <li><a class="linkmenu" href="crearpj.html">Crear Personaje</a></li>
+            <li><a class="linkmenu" href="historia.html">Historia</a></li>
+        </ul>
+    </div>
+    <div>
+        <table id="tablarazas">
+            <tr>
+                <td><img src="./src/gnomeregan.webp" width="440" height="340">
+                    <p class="pctitulorazas"> Capital: Gnomeregan</p>
+                    <p class="pcaracteristicasrazas">
+                        Gnomeregan fue la capital de los gnomos hasta que una invasión trogg provocó su caída. Gracias a la ayuda de la Alianza, los gnomos 
+                        han recuperado varias zonas de Gnomeregan, en un esfuerzo que continúa sin descanso para recuperar toda la ciudad.</p>
+                </td>
+                <td><img src="./src/monturaracialgnomo.webp" width="440" height="340">
+                    <p class="pctitulorazas"> Montura racial: Mecazancudo</p>
+                    <p class="pcaracteristicasrazas">El revolucionario mecazancudo de los gnomos es otra de las maravillas creadas por su capacidad para la ingeniería. 
+                        Se construyen utilizando compresión a vapor, dinámica servomotora y blindaje de acero reforzado, lo que ofrece al jinete un medio de transporte 
+                        fiable y duradero.</p>
+                </td>
+            </tr>
+            <tr>
+                <table id="tablaclasesyraciales">
+                    <th>Clases disponibles</th>
+                    <th>Raciales</th>
+                    <tr>
+                        <td><img src="./src/clasesimg/classicon_hunter.jpg">
+                            <img src="./src/clasesimg/classicon_mage.jpg">
+                            <img src="./src/clasesimg/classicon_monk.jpg">
+                            <img src="./src/clasesimg/classicon_priest.jpg">
+                            <img src="./src/clasesimg/classicon_rogue.jpg">
+                        </td>
+                        <td><img src="./src/raciales/racialgnomo1.jpg">
+                            <img src="./src/raciales/racialgnomo2.jpg">
+                            <img src="./src/raciales/racialgnomo3.jpg">
+                            <img src="./src/raciales/racialgnomo4.jpg">
+                            <img src="./src/raciales/racialgnomo5.jpg">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./src/clasesimg/classicon_warlock.jpg">
+                            <img src="./src/clasesimg/classicon_warrior.jpg">
+                            <img src="./src/clasesimg/spell_deathknight_classicon.jpg">
+                        </td>
+                    </tr>
+                </table>
+            </tr>
+        </table>
+    </div>
+    <div class="divbutton">
+        <button class="buttonpj"><a class="linkcrear" href="./crearpj.html">Crear Pj</a></button>
+    </div>
+</body>
+
+</html>

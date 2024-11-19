@@ -7,12 +7,15 @@ body {
     background-repeat: no-repeat;
 }
 body#bodyali {
-    background-color: #0f1422; 
-    background-image: url(./src/alianzashield.gif); 
-    background-size: auto;
-    background-repeat: repeat-y;
-
+    background-color: #0f1422;
+    background-image: 
+        url(./src/alianzashield.gif), 
+        url(./src/alianzashield.gif); 
+    background-repeat: no-repeat; 
+    background-position: left top, left bottom; 
+    background-size: auto; 
 }
+
 
 
 h2 {
@@ -66,12 +69,15 @@ td {
 }
 
 
-.td-content h1 {
+.td-content a {
     margin: 0; 
     color: #ddd;
     font-variant: small-caps;
+    text-decoration: none;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.td-content h1:hover{
+.td-content a:hover{
     color: rgb(21, 105, 161);
 }
 .td-content p{
@@ -83,6 +89,7 @@ td {
 .divbutton{
     position: relative;
     text-align: center;
+    margin-top: 2%;
 }
 .buttonpj{
     width: 100px;
@@ -112,6 +119,9 @@ td {
 #tablarazas td {
     vertical-align: top; 
     text-align: center; 
+}
+#tablarazas p {
+    margin-top: 5%;
 }
 .pcaracteristicasrazas{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
