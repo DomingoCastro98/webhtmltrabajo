@@ -8,12 +8,12 @@
         content="Videojuego MMORPG basado en el combate humano vs humano o humano vs máquina donde existen diferentes razas como el orco, humano, elfo entre otras." />
     <meta name="author" content="Domingo" />
     <title>World of Warcraft</title>
-    <link rel="stylesheet" href="css.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="./src/WoW.ico" />
     <script>
-        // Función para regresar a la página anterior
+        
         function goBack() {
-            window.history.back(); // Vuelve a la página anterior en el historial
+            window.history.back(); 
         }
     </script>
 </head>
@@ -36,7 +36,10 @@
     <tr>
         <td>
             <div class="td-content">
-                <img src="./src/humano.webp" alt="Imagen" width="160" height="160">
+                <img src="./src/humano.webp"  usemap="#humano-map" width="160" height="160">
+                <map name="humano-map">
+                     <area target="_blank" alt="Humano" title="Información del humano" href="./humano.html" coords="106,3,88,4,78,11,66,19,60,33,57,43,59,55,72,82,92,97,118,77,129,60,131,41,130,23,124,11" shape="poly">
+                </map>
                 <h1>Humano: </h1>
                 <p>El reino humano de Ventormenta es la columna vertebral de la Alianza. 
                     La voluntad de esta ciudad por colaborar con los demás mediante la diplomacia ha demostrado ser uno de sus puntos fuertes. 
