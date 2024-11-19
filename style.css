@@ -127,6 +127,18 @@ td {
 
 }
 
+.thrazasali {
+    font-size: xx-large;
+    text-align: center;
+    color: #00244c;
+}
+
+.thrazashorda {
+    font-size: xx-large;
+    text-align: center;
+    color: #8a0000;
+}
+
 #tablarazas td {
     vertical-align: top;
     text-align: center;
