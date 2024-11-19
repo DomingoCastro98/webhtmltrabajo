@@ -10,20 +10,20 @@
     <title>World of Warcraft</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="./src/WoW.ico" />
-    <script>
-       
-        function goBack() {
-            window.history.back(); 
-        }
-    </script>
 </head>
 
 <body id="bodyali">
     <div id="menu">
-<img src="./src/arrowback.ico"  usemap="#image-map" width="64px" height="64px" />
-<map name="image-map">
-    <area target="" alt="Inicio" title="Inicio" href="index.html" coords="133,134,159" shape="circle">
-</map>
+        <script>
+            function goBack(event) {
+                event.preventDefault(); 
+                window.history.back();
+            }
+        </script>
+    
+        <a href="#" onclick="goBack(event)">
+            <img src="./src/arrowback.ico" alt="Back Button">
+        </a>
 <ul id="menu">
     <li><a class="linkmenu" href="razas.html">Razas</a></li>
     <li><a class="linkmenu" href="crearpj.html">Crear Personaje</a></li>
