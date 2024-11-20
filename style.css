@@ -16,6 +16,16 @@ body#bodyali {
     background-size: auto;
 }
 
+body#bodyhorda {
+    background-color: #3a0e0f;
+    background-image:
+        url(./src/hordeshield.png),
+        url(./src/hordeshield.png);
+    background-repeat: no-repeat;
+    background-position: left top, left bottom;
+    background-size: 20%;
+}
+
 
 
 h2 {
@@ -127,6 +137,15 @@ td {
 
 }
 
+#tablarazashorda {
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    margin: auto;
+    background-color: none;
+
+}
+
 .thrazasali {
     font-size: xx-large;
     text-align: center;
@@ -144,8 +163,16 @@ td {
     text-align: center;
     border: 0;
 }
+#tablarazashorda td {
+    vertical-align: top;
+    text-align: center;
+    border: 0;
+}
 
 #tablarazas p {
+    margin-top: 5%;
+}
+#tablarazashorda p {
     margin-top: 5%;
 }
 
@@ -177,8 +204,29 @@ th {
     background-color: #0f1422;
 }
 
+#tablaclasesyracialeshorda {
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    background-color: none;
+}
+
+#tablaclasesyracialeshorda td {
+    vertical-align: top;
+    text-align: center;
+    border: none;
+}
+
 #tablaclasesyraciales td {
     vertical-align: top;
     text-align: center;
     border: 0;
+}
+#form_crearpj{
+    text-align: center;
+}
+#form_crearpj input{
+    margin: auto;
 }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="World of Warcraft, humanos, orcos, guerra, pvp, pve" />
+    <meta name="description" content="El humano" />
+    <meta name="author" content="Domingo" />
+    <title>Gnomo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./src/gnomofaviicon.webp" />
+</head>
+
+<body>
+    <div id="menu">
+        <script>
+            function goBack() {
+                if (window.history.length > 1) {
+                    window.history.back();
+                } else {
+                    window.location.href = 'index.html';
+                }
+            }
+        </script>
+        <a href="#" onclick="goBack(event)">
+            <img src="./src/arrowback.ico" alt="Back Button">
+        </a>
+        <ul id="menu">
+            <li><a class="linkmenu" href="razas.html">Razas</a></li>
+            <li><a class="linkmenu" href="historia.html">Historia</a></li>
+        </ul>
+    </div>
+    <div>
+        <form id="form_crearpj" name="form_crearpj" method="post" action="/ServletEjemploFormularios">
+            <label>Nombre: </label>
+            <input type="text" name="Nombre" id="Nombre"/>
+        </form>
+    </div>
+</body>
+
+</html>
