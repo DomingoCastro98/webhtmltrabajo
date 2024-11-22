@@ -4,6 +4,8 @@ body {
     background-image: url(./src/background.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 body#bodyali {
@@ -224,9 +226,18 @@ th {
     text-align: center;
     border: 0;
 }
-#form_crearpj{
-    text-align: center;
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
 }
-#form_crearpj input{
-    margin: auto;
+.divform{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: x-large;
+}
+.divform textarea{
+    width: 25rem;
 }
