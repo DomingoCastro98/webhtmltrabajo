@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="keywords" content="World of Warcraft, humanos, orcos, guerra, pvp, pve" />
+    <meta name="keywords" content="World of Warcraft, humanos, orcos, guerra, pvp, pve, razas" />
     <meta name="description"
-        content="Videojuego MMORPG basado en el combate humano vs humano o humano vs máquina donde existen diferentes razas como el orco, humano, elfo entre otras." />
+        content="Algunas razas de WoW" />
     <meta name="author" content="Domingo" />
-    <title>World of Warcraft</title>
+    <title>Razas</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./src/WoW.ico" />
+    <link rel="icon" href="./src/iconos/WoW.ico" />
     <script>
 
         function goBack() {
@@ -26,13 +26,23 @@
 
 <body>
     <div id="menu">
-        <img src="./src/arrowback.ico" usemap="#image-map" width="64px" height="64px" />
-        <map name="image-map">
-            <area target="" alt="Inicio" title="Inicio" href="index.html" coords="133,134,159" shape="circle">
-        </map>
+        <script>
+            function goBack() {
+                if (window.history.length > 1) {
+                    window.history.back();
+                } else {
+                    window.location.href = 'index.html';
+                }
+            }
+        </script>
+
+        <a href="#" onclick="goBack(event)">
+            <img src="./src/arrowback.ico" alt="Back Button">
+        </a>
         <ul id="menu">
             <li><a class="linkmenu" href="razas.html">Razas</a></li>
             <li><a class="linkmenu" href="historia.html">Historia</a></li>
+            <li><a class="linkmenu" href="expansiones.html">Expansiones</a></li>
         </ul>
 
     </div>
@@ -44,7 +54,7 @@
         <tr>
             <td>
                 <div class="td-content">
-                    <img src="./src/humano.webp" usemap="#humano-map" width="160" height="160">
+                    <img src="./src/razas/humano.webp" usemap="#humano-map" width="160" height="160">
                     <map name="humano-map">
                         <area target="" alt="Humano" title="Información del humano" href="./humano.html"
                             coords="106,3,88,4,78,11,66,19,60,33,57,43,59,55,72,82,92,97,118,77,129,60,131,41,130,23,124,11"
@@ -60,7 +70,7 @@
             </td>
             <td>
                 <div class="td-content">
-                    <img src="./src/gnomo.jpg" usemap="#gnomo-map" width="160" height="160">
+                    <img src="./src/razas/gnomo.jpg" usemap="#gnomo-map" width="160" height="160">
                     <map name="gnomo-map">
                         <area target="" alt="Información Gnomo" title="Información Gnomo" href="./gnomo.html"
                             coords="112,40,56" shape="circle">
@@ -77,7 +87,11 @@
         <tr>
             <td>
                 <div class="td-content">
-                    <img src="./src/orco.jpg" alt="Imagen" width="160" height="160">
+                    <img src="./src/razas/orco.jpg" usemap="#orco-map" width="160" height="160">
+                    <map name="orco-map">
+                        <area target="" alt="Orco Raza" title="Orco Raza" href="./orco.html" coords="1017,1219,2,3"
+                            shape="rect">
+                    </map>
                     <a href="./orco.html"> Orco: </a>
                     <p>Los orcos vivían antaño como clanes chamánicos en el exuberante planeta de Draenor. Kil’jaeden,
                         un señor demoníaco de la Legión Ardiente, los corrompió e invadieron el mundo de Azeroth.
@@ -88,7 +102,11 @@
             </td>
             <td>
                 <div class="td-content">
-                    <img src="./src/goblin.jpg" alt="Imagen" width="160" height="160">
+                    <img src="./src/razas/goblin.jpg" usemap="#goblin-map" width="160" height="160">
+                    <map name="goblin-map">
+                        <area target="" alt="Goblin Raza" title="Goblin Raza" href="./goblin.html"
+                            coords="1017,1219,2,3" shape="rect">
+                    </map>
                     <a href="./goblin.html"> Goblin: </a>
                     <p>La astucia y codicia de los goblins los convierten en maestros del mercantilismo. Ahora que han
                         renovado antiguos acuerdos con sus socios y antiguos aliados, los goblins del Cártel Pantoque

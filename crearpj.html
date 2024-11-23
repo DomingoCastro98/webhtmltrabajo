@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="keywords" content="World of Warcraft, humanos, orcos, guerra, pvp, pve" />
-    <meta name="description" content="El humano" />
+    <meta name="keywords" content="World of Warcraft, humanos, orcos, guerra, pvp, pve, creación de personaje" />
+    <meta name="description" content="Crear pj" />
     <meta name="author" content="Domingo" />
-    <title>Gnomo</title>
+    <title>Crear PJ</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./src/gnomofaviicon.webp" />
+    <link rel="icon" href="./src/iconos/WoW.ico" />
 </head>
 
 <body>
@@ -28,61 +28,63 @@
         <ul id="menu">
             <li><a class="linkmenu" href="razas.html">Razas</a></li>
             <li><a class="linkmenu" href="historia.html">Historia</a></li>
+            <li><a class="linkmenu" href="expansiones.html">Expansiones</a></li>
         </ul>
     </div>
     <div>
-        <form id="form_crearpj" name="form_crearpj" method="post" action="./index.html">
-           <div class="divform">
-            <label>Nombre: </label>
-            <input type="text" name="Nombre" id="Nombre" placeholder="Introduce tu nombre"/>
-        </div>
-        <div class="divform">
-            <label>Raza: </label>
-            <select name="Raza" id="SelectRaza">
-                <option value="1">Humano</option>
-                <option value="2">Goblin</option>
-                <option value="3">Orco</option>
-                <option value="4">Gnomo</option>
-
-            </select>
-            <label>Clase</label>
-            <select name="Clase" id="SelectClase">
-                <option value="1">Hunter</option>
-                <option value="2">Mago</option>
-                <option value="3">Monje</option>
-                <option value="4">Rogue</option>
-                <option value="5">Death Knight</option>
-                <option value="6">Priest</option>
-                <option value="7">Warrior</option>
-                <option value="8">Warlock</option>
-            </select>
-        </div>
-        <div>
-            <label>
-            <input type="radio" name="faccion" value="Horda" id="1">
-            Horda
-                <input type="radio" name="faccion" value="Alianza" id="2">
-                Alianza
-            </label>
-        </div>
-        <div>
-            <input type="checkbox" name="newplayer" id="newplayer" />
-            <label for="newplayer">¿Eres jugador nuevo?</label>
-        </div>
-        <div>
-            <label>
-                <input type="radio" name="Sexo" value="1" id="Sexo_0" />
-                Hombre</label>
-              <br />
-              <label>
-                <input type="radio" name="Sexo" value="2" id="Sexo_1" />
-                Mujer</label>
-        </div>
+        <form id="form_crearpj" name="form_crearpj" method="post" action="personajecreado.html">
             <div class="divform">
-            <label>Historia: </label>
-            <textarea name="Historia" id="Historia" rows="5" placeholder="Introduce la historia de tu personaje brevemente."></textarea>
-        </div>
-        <input type="submit" name="Enviar" id="Enviar" value="Enviar el formulario" />
+                <label>Nombre: </label>
+                <input type="text" name="Nombre" id="Nombre" placeholder="Introduce tu nombre" />
+            </div>
+            <div class="divform">
+                <label>Raza: </label>
+                <select name="Raza" id="SelectRaza">
+                    <option value="1">Humano</option>
+                    <option value="2">Goblin</option>
+                    <option value="3">Orco</option>
+                    <option value="4">Gnomo</option>
+
+                </select>
+                <label>Clase</label>
+                <select name="Clase" id="SelectClase">
+                    <option value="1">Hunter</option>
+                    <option value="2">Mago</option>
+                    <option value="3">Monje</option>
+                    <option value="4">Rogue</option>
+                    <option value="5">Death Knight</option>
+                    <option value="6">Priest</option>
+                    <option value="7">Warrior</option>
+                    <option value="8">Warlock</option>
+                </select>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="faccion" value="Horda" id="1">
+                    Horda
+                    <input type="radio" name="faccion" value="Alianza" id="2">
+                    Alianza
+                </label>
+            </div>
+            <div>
+                <input type="checkbox" name="newplayer" id="newplayer" />
+                <label for="newplayer">¿Eres jugador nuevo?</label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="Sexo" value="1" id="Sexo_0" />
+                    Hombre</label>
+                <br />
+                <label>
+                    <input type="radio" name="Sexo" value="2" id="Sexo_1" />
+                    Mujer</label>
+            </div>
+            <div class="divform">
+                <label>Historia: </label>
+                <textarea name="Historia" id="Historia" rows="5"
+                    placeholder="Introduce la historia de tu personaje brevemente."></textarea>
+            </div>
+            <input type="submit" name="Enviar" id="Enviar" value="Enviar el formulario" />
         </form>
     </div>
 </body>

@@ -1,243 +1,365 @@
-body {
-    margin: auto;
-    padding: auto;
-    background-image: url(./src/background.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+/* BODYS */
 
+body {
+    margin: auto; /* Centra el contenido de la página */
+    padding: auto; /* Agrega relleno automático */
+    background-image: url(./src/fondos/background.jpg); /* Establece una imagen de fondo */
+    background-size: cover; /* Cubre toda el área de la página */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Establece la fuente de texto */
 }
 
 body#bodyali {
-    background-color: #0f1422;
+    background-color: #0f1422; /* Establece un color de fondo específico */
     background-image:
-        url(./src/alianzashield.gif),
-        url(./src/alianzashield.gif);
-    background-repeat: no-repeat;
-    background-position: left top, left bottom;
-    background-size: auto;
+        url(./src/fondos/alianzashield.gif), /* Establece una imagen de fondo de escudo */
+        url(./src/fondos/alianzashield.gif); /* Establece una imagen de fondo adicional */
+    background-repeat: no-repeat; /* No repite las imágenes de fondo */
+    background-position: left top, left bottom; /* Posiciona las imágenes de fondo */
+    background-size: 20%; /* Ajusta el tamaño del fondo */
 }
 
 body#bodyhorda {
-    background-color: #3a0e0f;
+    background-color: #3a0e0f; /* Establece un color de fondo para la horda */
     background-image:
-        url(./src/hordeshield.png),
-        url(./src/hordeshield.png);
-    background-repeat: no-repeat;
-    background-position: left top, left bottom;
-    background-size: 20%;
+        url(./src/fondos/hordeshield.png), /* Establece una imagen de fondo de escudo */
+        url(./src/fondos/hordeshield.png); /* Establece una imagen de fondo adicional */
+    background-repeat: no-repeat; /* No repite las imágenes de fondo */
+    background-position: left top, left bottom; /* Posiciona las imágenes de fondo */
+    background-size: 20%; /* Ajusta el tamaño del fondo */
 }
 
-
-
-h2 {
-    text-align: center;
-    margin: 100px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
+body#bodyexpansiones {
+    background-image:
+        url(./src/fondos/lateralexpansiones.avif); /* Establece una imagen de fondo para expansiones */
+    background-repeat: repeat; /* Repite la imagen de fondo */
+    background-size: 20% 100%; /* Ajusta el tamaño del fondo */
+    margin: 0; /* Elimina el margen de la página */
+    height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
 }
 
-#menu {
-    display: flex;
-    color: white;
-    font-size: xx-large;
-    font-family: Arial, Helvetica, sans-serif;
-    align-items: center;
-    margin: auto;
+body#bodypjcreado {
+    text-align: center; /* Centra el texto */
 }
 
-#menu li {
-    padding: 10px;
-    color: white;
-    list-style-type: none;
+body#bodypjcreado button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Establece la fuente para el botón */
+    font-size: larger; /* Aumenta el tamaño de la fuente */
+    margin: 10rem; /* Añade margen alrededor del botón */
+    background-color: #4a4b4a; /* Establece el color de fondo del botón */
+    border-style: groove; /* Establece el estilo del borde */
 }
 
-.linkmenu {
-    color: white;
-    text-decoration: none;
+/* DIVS */
+
+.divvideo {
+    position: relative; /* Posiciona el div de manera relativa */
+    margin: 0 auto; /* Centra el div */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    border-radius: 20px; /* Redondea los bordes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aplica sombra alrededor del div */
+    width: 560px; /* Establece el ancho del div */
+    height: 400px; /* Establece la altura del div */
+    background: #000; /* Establece el fondo del div */
 }
 
-.linkmenu:hover {
-    color: aqua;
-    cursor: pointer;
-    text-decoration: overline;
+.divvideo iframe {
+    position: absolute; /* Posiciona el iframe de manera absoluta */
+    top: 0; /* Coloca el iframe en la parte superior */
+    left: 0; /* Coloca el iframe en la parte izquierda */
+    width: 100%; /* Hace que el iframe ocupe todo el ancho */
+    height: 100%; /* Hace que el iframe ocupe toda la altura */
+    border: none; /* Elimina el borde del iframe */
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+.divform {
+    display: flex; /* Usa flexbox para el diseño */
+    flex-direction: column; /* Coloca los elementos en una columna */
+    text-align: center; /* Centra el texto */
+    font-size: x-large; /* Aumenta el tamaño de la fuente */
 }
 
-td {
-    border: 1px solid #ddd;
-    padding: 10px;
+.divform textarea {
+    width: 25rem; /* Establece el ancho del área de texto */
 }
 
-.td-content {
-    display: flex;
+.divvideoexpansiones {
+    position: relative; /* Posiciona el div de manera relativa */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    border-radius: 20px; /* Redondea los bordes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aplica sombra alrededor del div */
+    width: 360px; /* Establece el ancho del div */
+    height: 200px; /* Establece la altura del div */
+    background: #000; /* Establece el fondo del div */
+    margin-top: 2rem; /* Añade margen en la parte superior */
 }
 
-
-.td-content img {
-    margin-right: 20px;
-}
-
-
-.td-content a {
-    margin: 0;
-    color: #ddd;
-    font-variant: small-caps;
-    text-decoration: none;
-    font-size: x-large;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.td-content a:hover {
-    color: rgb(21, 105, 161);
-}
-
-.td-content p {
-    color: white;
-    font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 10px;
+.divvideoexpansiones iframe {
+    position: absolute; /* Posiciona el iframe de manera absoluta */
+    top: 0; /* Coloca el iframe en la parte superior */
+    left: 0; /* Coloca el iframe en la parte izquierda */
+    width: 100%; /* Hace que el iframe ocupe todo el ancho */
+    height: 100%; /* Hace que el iframe ocupe toda la altura */
+    border: none; /* Elimina el borde del iframe */
 }
 
 .divbutton {
-    position: relative;
-    text-align: center;
-    margin-top: 2%;
+    position: relative; /* Posiciona el div de manera relativa */
+    text-align: center; /* Centra el texto */
+    margin-top: 2%; /* Añade margen en la parte superior */
 }
 
-.buttonpj {
-    width: 100px;
-    height: 50px;
-    background-color: rgb(87, 5, 5);
-    color: #ddd;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large
+/* Menu */
+
+#menu {
+    display: flex; /* Usa flexbox para el diseño */
+    color: white; /* Establece el color del texto */
+    font-size: xx-large; /* Establece el tamaño de la fuente */
+    font-family: Arial, Helvetica, sans-serif; /* Establece la fuente */
+    align-items: center; /* Alinea los elementos verticalmente */
+    margin: auto; /* Centra el menú */
 }
 
-.linkcrear {
-    color: white;
-    text-decoration: none;
+#menu li {
+    padding: 10px; /* Añade padding a los elementos de la lista */
+    color: white; /* Establece el color del texto */
+    list-style-type: none; /* Elimina el estilo de lista */
 }
 
-.linkcrear:hover {
-    color: aqua;
-    cursor: pointer;
-    text-decoration: underline;
+.linkmenu {
+    color: white; /* Establece el color del enlace */
+    text-decoration: none; /* Elimina la decoración del enlace */
 }
 
-#tablarazas {
-    width: 50%;
-    height: 50%;
-    text-align: center;
-    margin: auto;
-    background-color: #0f1422;
-
+.linkmenu:hover {
+    color: aqua; /* Cambia el color al pasar el ratón */
+    cursor: pointer; /* Cambia el cursor a puntero */
+    text-decoration: overline; /* Añade una línea sobre el texto */
 }
 
-#tablarazashorda {
-    width: 50%;
-    height: 50%;
-    text-align: center;
-    margin: auto;
-    background-color: none;
+/* Tablas */
 
-}
-
-.thrazasali {
-    font-size: xx-large;
-    text-align: center;
-    color: #00244c;
-}
-
-.thrazashorda {
-    font-size: xx-large;
-    text-align: center;
-    color: #8a0000;
-}
-
-#tablarazas td {
-    vertical-align: top;
-    text-align: center;
-    border: 0;
-}
-#tablarazashorda td {
-    vertical-align: top;
-    text-align: center;
-    border: 0;
-}
-
-#tablarazas p {
-    margin-top: 5%;
-}
-#tablarazashorda p {
-    margin-top: 5%;
-}
-
-.pcaracteristicasrazas {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #ddd;
-    margin: 0;
-    border: 0;
-}
-
-.pctitulorazas {
-    color: #f8b700;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: auto;
-    width: auto;
+table {
+    width: 100%; /* Establece el ancho de la tabla */
+    border-collapse: collapse; /* Elimina los espacios entre celdas */
 }
 
 th {
-    color: #ddd;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ddd; /* Establece el color de las celdas del encabezado */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Establece la fuente */
+}
+
+td {
+    border: 1px solid #ddd; /* Establece un borde en las celdas */
+    padding: 10px; /* Añade padding a las celdas */
+}
+
+.td-content {
+    display: flex; /* Usa flexbox para el diseño dentro de la celda */
+}
+
+.td-content img {
+    margin-right: 20px; /* Añade margen a la derecha de las imágenes */
+}
+
+.td-content a {
+    margin: 0; /* Elimina el margen */
+    color: #ddd; /* Establece el color del enlace */
+    font-variant: small-caps; /* Establece texto en minúsculas */
+    text-decoration: none; /* Elimina la decoración del enlace */
+    font-size: x-large; /* Aumenta el tamaño de la fuente */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Establece la fuente */
+}
+
+.td-content a:hover {
+    color: rgb(21, 105, 161); /* Cambia el color del enlace al pasar el ratón */
+}
+
+.td-content p {
+    color: white; /* Establece el color del texto */
+    font-size: large; /* Aumenta el tamaño de la fuente */
+    font-family: Arial, Helvetica, sans-serif; /* Establece la fuente */
+    margin: 10px; /* Añade margen */
+}
+
+#tablarazas {
+    width: 50%; /* Establece el ancho de la tabla */
+    height: 50%; /* Establece la altura de la tabla */
+    text-align: center; /* Centra el contenido */
+    margin: auto; /* Centra la tabla */
+    background-color: #0f1422; /* Establece un color de fondo */
+}
+
+#tablarazashorda {
+    width: 50%; /* Establece el ancho de la tabla */
+    height: 50%; /* Establece la altura de la tabla */
+    text-align: center; /* Centra el contenido */
+    margin: auto; /* Centra la tabla */
+    background-color: none; /* No tiene color de fondo */
+}
+
+.thrazasali {
+    font-size: xx-large; /* Aumenta el tamaño de la fuente */
+    text-align: center; /* Centra el texto */
+    color: #00244c; /* Establece el color del texto */
+}
+
+.thrazashorda {
+    font-size: xx-large; /* Aumenta el tamaño de la fuente */
+    text-align: center; /* Centra el texto */
+    color: #8a0000; /* Establece el color del texto */
+}
+
+#tablarazas td {
+    vertical-align: top; /* Alinea el contenido al top */
+    text-align: center; /* Centra el contenido */
+    border: 0; /* Elimina el borde */
+}
+
+#tablarazashorda td {
+    vertical-align: top; /* Alinea el contenido al top */
+    text-align: center; /* Centra el contenido */
+    border: 0; /* Elimina el borde */
+}
+
+#tablarazas p {
+    margin-top: 5%; /* Añade margen superior */
+}
+
+#tablarazashorda p {
+    margin-top: 5%; /* Añade margen superior */
 }
 
 #tablaclasesyraciales {
-    width: 50%;
-    height: 50%;
-    text-align: center;
-    margin: auto;
-    margin-top: 5%;
-    background-color: #0f1422;
+    width: 50%; /* Establece el ancho de la tabla */
+    height: 50%; /* Establece la altura de la tabla */
+    text-align: center; /* Centra el contenido */
+    margin: auto; /* Centra la tabla */
+    margin-top: 5%; /* Añade margen superior */
+    background-color: #0f1422; /* Establece un color de fondo */
 }
 
 #tablaclasesyracialeshorda {
-    width: 50%;
-    height: 50%;
-    text-align: center;
-    margin: auto;
-    margin-top: 5%;
-    background-color: none;
+    width: 50%; /* Establece el ancho de la tabla */
+    height: 50%; /* Establece la altura de la tabla */
+    text-align: center; /* Centra el contenido */
+    margin: auto; /* Centra la tabla */
+    margin-top: 5%; /* Añade margen superior */
+    background-color: none; /* No tiene color de fondo */
 }
 
 #tablaclasesyracialeshorda td {
-    vertical-align: top;
-    text-align: center;
-    border: none;
+    vertical-align: top; /* Alinea el contenido al top */
+    text-align: center; /* Centra el contenido */
+    border: none; /* Elimina el borde */
 }
 
 #tablaclasesyraciales td {
-    vertical-align: top;
-    text-align: center;
-    border: 0;
+    vertical-align: top; /* Alinea el contenido al top */
+    text-align: center; /* Centra el contenido */
+    border: 0; /* Elimina el borde */
 }
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
+
+/* Botones */
+
+.buttonpj {
+    width: 100px; /* Establece el ancho del botón */
+    height: 50px; /* Establece la altura del botón */
+    background-color: rgb(87, 5, 5); /* Establece el color de fondo */
+    color: #ddd; /* Establece el color del texto */
+    font-family: Arial, Helvetica, sans-serif; /* Establece la fuente */
+    font-size: large; /* Aumenta el tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor a puntero */
 }
-.divform{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: x-large;
+
+.linkcrear {
+    color: white; /* Establece el color del enlace */
+    text-decoration: none; /* Elimina la decoración del enlace */
 }
-.divform textarea{
-    width: 25rem;
+
+.linkcrear:hover {
+    color: aqua; /* Cambia el color del enlace al pasar el ratón */
+    cursor: pointer; /* Cambia el cursor a puntero */
+    text-decoration: underline; /* Añade subrayado al pasar el ratón */
+}
+
+/* Textos */
+
+h2 {
+    text-align: center; /* Centra el texto */
+    margin: 5rem; /* Añade margen alrededor del título */
+    color: white; /* Establece el color del texto */
+    font-family: Arial, Helvetica, sans-serif; /* Establece la fuente */
+    font-size: medium; /* Establece el tamaño de la fuente */
+}
+
+.pcaracteristicasrazas {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Establece la fuente */
+    color: #ddd; /* Establece el color del texto */
+    margin: 0; /* Elimina el margen */
+    border: 0; /* Elimina el borde */
+}
+
+.pctitulorazas {
+    color: #f8b700; /* Establece el color del texto */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Establece la fuente */
+    margin: auto; /* Centra el texto */
+    width: auto; /* El ancho se ajusta automáticamente */
+}
+
+.alianzatexto {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Establece la fuente */
+    color: rgb(1, 1, 156); /* Establece el color del texto */
+    font-size: larger; /* Aumenta el tamaño de la fuente */
+}
+
+.hordatexto {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Establece la fuente */
+    color: rgb(158, 2, 2); /* Establece el color del texto */
+    font-size: larger; /* Aumenta el tamaño de la fuente */
+}
+
+.titulo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Establece la fuente */
+    color: #f8b700; /* Establece el color del texto */
+    font-size: larger; /* Aumenta el tamaño de la fuente */
+}
+
+/* Formularios */
+
+form {
+    display: flex; /* Usa flexbox para el diseño */
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center; /* Centra los elementos */
+    gap: 3rem; /* Añade espacio entre los elementos */
+}
+
+/* Audio */
+.musicahistoria {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Establece la fuente */
+    text-align: center; /* Centra el texto */
+    margin-top: 5rem; /* Añade margen superior */
+}
+
+/* Listas */
+
+#expansiones {
+    list-style-type: decimal; /* Establece el estilo de lista numerada */
+    padding-left: 20px; /* Añade un margen izquierdo */
+    display: flex; /* Usa flexbox para alinear los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+}
+
+#expansiones li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Establece la fuente */
+    font-size: x-large; /* Aumenta el tamaño de la fuente */
+    font-style: italic; /* Establece el estilo en cursiva */
+    font-weight: bolder; /* Hace el texto más grueso */
+    text-align: start; /* Alinea el texto a la izquierda */
+    color: #fecc7e; /* Establece el color del texto */
+    display: list-item; /* Mantiene el formato de lista */
+    margin-right: 20px; /* Añade espacio a la derecha */
+    margin-bottom: 20px; /* Añade espacio vertical entre los elementos */
+    margin-left: 20vh; /* Añade espacio a la izquierda */
+    width: 30%; /* Establece el ancho de los elementos */
 }
